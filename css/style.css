@@ -1,0 +1,510 @@
+/* AFECTA A TODAS LAS PÁGINAS */
+
+*{
+    margin:0;
+    font-family: Noto Sans, Sans-serif;
+    color:#4b4947;
+}
+
+/* -------------------------------- */
+
+/* INDEX.HTML */
+
+#contenedorGridIndex{
+    height:100vh;
+    width:100%;
+    overflow: auto;
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
+    grid-template-rows: 95px 90%;
+    grid-template-areas:
+        "headerIndex headerIndex headerIndex"
+        "asideiz contenido asideder";
+}
+/* Header */
+#headerIndex{
+    grid-area: headerIndex;
+    display:flex;
+    justify-content:flex-start;
+    border-bottom:1px solid lightgrey;
+    position: sticky;
+    top:0;
+    z-index:1;
+    background-color:white;
+}
+#logoEsloganHeader{
+    padding: 10px;
+    display:flex;
+    gap:20px;
+    flex-basis:25%;
+}
+#logoEsloganHeader img{
+    width:75px;
+}
+#logoEsloganHeader p{
+    color: #cc9900
+}
+/* Buscador */
+#formBuscador{
+    padding:20px 0 20px 0;
+    display:flex;
+    flex-basis:35%;
+}
+#buscador{
+    border:1px solid lightgrey;
+    border-radius:40px;
+    padding:10px;
+    background-color: #f0f2f5;
+    width:100%;
+}
+.fa-magnifying-glass{
+    padding: 15px 10px 0 0;
+}
+/* Iconos */
+#iconosHeaderIndex{
+    flex-basis:40%;
+}
+#contenedorIconosHeader ul{
+    list-style: none;
+    display:flex;
+    justify-content: flex-end;
+    gap:2%;
+    padding: 20px 0 0 20px;
+}
+#contenedorIconosHeader img{
+    width:35px;
+    height:35px;
+    padding:10px;
+    border:2px solid lightgrey;
+    border-radius:50%;
+}
+#contenedorIconosHeader img:hover{
+    background-color:lightgrey;
+}
+.fa-lock{
+    padding: 0 10px 0 0;
+}
+#contenedorCerrarSesion{
+    margin:15px 10px 0 0;
+}
+#cerrarSesion{
+  background-color: #FFF;
+  padding: 10px 15px;
+  font-weight:800;
+  text-decoration: none;
+  font-size:1rem;
+  border: 2px solid lightgrey;
+  border-radius:10px;
+}
+#cerrarSesion:hover{
+  background-color: lightgrey;
+}
+#imagenperfil{
+    width:55px !important;
+    height:55px !Important;
+    padding:0 !important;
+}
+#columnaLateralIzquierda{
+    position: sticky;
+    top:95px;
+    grid-area: asideiz;
+    border-right:1px solid lightgrey;
+    background-color: #FFF;
+    display:flex;
+}
+#columnaLateralDerecha{
+    position: sticky;
+    top:95px;
+    grid-area: asideder;
+    background-color: #f0f2f5;
+    display:flex;
+    justify-content: flex-start;
+}
+.contenedorColumnaLateral{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width:100%;
+}
+/* Menú lateral izquierda */
+#menuLateralIzquierda ul{
+    list-style: none;
+    display: flex;
+    gap:20px;
+    flex-direction: column;
+    padding: 20px 0 0 20px;
+}
+#menuLateralIzquierda a{
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+#menuLateralIzquierda a:hover{
+    color: #cc9900;
+}
+#menuLateralIzquierda i{
+    padding: 0 10px 0 0;
+}
+#menuLateralIzquierda .fa-arrow-down, .fa-bookmark{
+    padding: 0 15px 0 0;
+    margin: 0 0 0 2px;
+}
+/* Menú lateral derecha */
+#contenedorColumnaLateralDerecha{
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    flex-basis:80%;
+}
+.contenidoColumnaLateralDerecha{
+    background-color: #FFF;
+    margin:20px 0 0 0;
+    padding:20px;
+    border-radius:15px;
+    box-shadow: -1px 4px 14px 0px rgba(0,0,0,0.24);
+    display:flex;
+    flex-direction: column;
+}
+#contenidoColumnaLateralPublicar{
+    margin:20px 0 0 0;
+    padding:20px;
+    display:flex;
+    flex-direction: column;
+}
+#contenidoColumnaLateralPublicar h2{
+    text-align:center;
+    margin: 0 0 10px 0;
+    font-size:1.4rem;
+    font-weight:600;
+}
+.contenidoColumnaLateralDerecha h2{
+    font-weight:600;
+    font-size:1.6rem;
+    text-align:center;
+}
+.filasContactos{
+    display:flex;
+    justify-content:flex-start;
+    margin: 10px 0 0 0;
+}
+.filasContactos p{
+    padding:15px 0 0 10px;
+    font-size:1rem;
+    font-weight:600;
+}
+#publicar{
+    background-color: #FFF;
+    padding: 10px 15px;
+    font-weight:800;
+    text-decoration: none;
+    font-size:1.2rem;
+    text-align:center;
+    border: 3px solid #cc9900;
+    border-radius:10px;
+    margin:5px 15px 0 0;
+}
+.fa-square-arrow-up-right{
+    padding: 0 10px 0 0;
+    color:#cc9900;
+}
+.imagencontactos{
+    width:50px;
+    height:50px;
+    border:2px solid lightgrey;
+    border-radius:50%;
+}
+/* Footer Index */
+#contenedorFooterIndex{
+    padding: 0 0 30px 0;
+    width:100%;
+}
+#MenuFooterIndex ul{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap:24px;
+    padding:0;
+}
+#MenuFooterIndex a{
+    text-decoration: none;
+    font-size: 1rem;
+    color:#5f758e;
+    font-weight: 600;
+}
+#MenuFooterIndex a:hover{
+    color:#46596e;
+    text-decoration:underline;
+}
+#textoCopyrightIndex{
+    display: flex;
+    justify-content: center;
+    font-size: 0.8rem;
+}
+/* Publicaciones */
+#contenidoGeneralIndex{
+    grid-area:contenido;
+}
+.publicacionGeneral{
+    display:flex;
+    justify-content: center;
+    background-color: #f0f2f5;
+}
+.publicacion{
+    background-color: white;
+    padding:20px;
+    border-radius:20px;
+    margin:50px;
+    box-shadow: -1px 4px 14px 0px rgba(0,0,0,0.24);
+    width:60%;
+}
+.cabeceraPublicacion{
+    display:flex;
+    justify-content:space-between;
+    margin: 0 0 10px 0;
+}
+.cabeceraPublicacion{
+    display:flex;
+    justify-content:space-between;
+}
+.cabeceraPublicacionIzquierda{
+    display:flex;
+    justify-content:flex-start;
+}
+.cabeceraPublicacionDerecha{
+    margin: 0 15px 0 0;
+}
+.imagenCabeceraPublicacion{
+    width:40px;
+    height:40px;
+    border:1px solid lightgrey;
+    border-radius:50%;
+    margin: 0 10px 0 0;
+}
+.imagenPublicacion{
+    border-radius:10px;
+    margin:20px 0 0 0;
+    width:100%;
+}
+.resultadoInteracciones{
+    display:flex;
+    justify-content:space-between;
+    font-weight:400;
+    border-bottom:2px solid lightgrey;
+    padding:10px 0 12px 0;
+}
+.resultadoInteraccionesDerecha{
+    display: flex;
+    justify-content: flex-end;
+    gap:16px;
+}
+.interacciones{
+    display:flex;
+    justify-content:space-around;
+    margin: 10px 0 0 0;
+    padding:0 0 16px 0;
+    border-bottom: 2px solid lightgrey;
+}
+.interacciones a{
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+.meGustaActiva i, .meGustaActiva p{
+    color:#cc9900;
+}
+.enlaceComentarios{
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: 400;
+}
+.comentarios{
+    margin:10px 0 0 0;
+    display:flex;
+    flex-direction: column;
+}
+.contenedorComentarios{
+    margin:10px 0 0 0;
+    display:flex;
+    justify-content:flex-start;
+}
+.contenidoComentario h3{
+    font-size:1rem;
+}
+
+/* -------------------------------- */
+
+/* LOGIN.HTML */
+
+#contenedorLoginGrid{
+	height: 100vh;
+	width:100vw;
+    background-color: #f0f2f5;
+	overflow: hidden;
+    display: grid;
+    grid-template-columns: 3fr 3fr;
+    grid-template-rows: 4fr 0.5fr;
+    grid-template-areas:
+        "eslogan formlogin"
+        "footerlogin footerlogin";
+}
+#contenedorEsloganLogin{
+    display:flex;
+    justify-content: center;
+}
+#contenedorEsloganLoginColumna{
+    grid-area: eslogan;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    margin:0 0 200px 0;
+}
+#contenedorLoginLogo{
+    display:flex;
+}
+#contenedorEsloganLoginColumna h1{
+    font-weight:800;
+    font-size: 8em;
+}
+#contenedorEsloganLoginColumna p{
+    font-weight:500;
+    font-size: 2.5em;
+    color:#cc9900;
+}
+/* Formulario login */
+#contenedorFormularioLogin{
+    grid-area: formlogin;
+    display:flex;
+    justify-content:flex-start;
+}
+#contenedorFormularioColumna{
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+}
+#formularioLogin{
+    display:flex;
+    flex-direction: column;
+    background-color: #FFF;
+    border: 1px solid lightgrey;
+    border-radius:5px;
+    align-items:center;
+    padding:20px;
+    width:100%;
+}
+#logoLogin{
+    width: 350px;
+}
+#formularioLogin form{
+    display: flex;
+    flex-direction: column;
+    width:100%;
+}
+#formularioLogin input{
+    border:2px solid lightgrey;
+    border-radius:5px;
+    padding:20px;
+    background-color: #f0f2f5;
+    font-size:1rem;
+    flex-basis:95%;
+    margin: 0 0 30px 0;
+}
+#formularioLogin button{
+    padding:10px;
+    background-color:#5f758e;
+    color:#FFF;
+    font-size:1.3rem;
+    font-weight: 600;
+    border:0;
+    border-radius:5px;
+    cursor:pointer;
+    width:100%;
+    margin:0 0 20px 0;
+}
+#olvidaPass{
+    text-decoration: none;
+    font-size: 1rem;
+    color: #5f758e;
+    font-weight: 400;
+    padding:0 0 20px 0;
+}
+#olvidaPass:hover{
+    color:#cc9900;
+}
+#formularioLogin #crearCuenta{
+    background-color:#FFF;
+    color:#4b4947;
+    border:3px solid lightgrey;
+    border-radius:5px;
+    margin:0 0 20px 0;
+}
+#enlaceRegistro{
+    width:100%;
+}
+#formularioLogin #crearCuenta:hover{
+    background-color:lightgrey;
+}
+/* Footer login */
+#footerLoginRegistro{
+    grid-area: footerlogin;
+    display:flex;
+    justify-content: center;
+    flex-direction:column;
+    background-color: #e7c5a7;
+    border-top:5px solid lightgrey;
+}
+#MenuFooterLoginRegistro ul{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap:24px;
+    padding:0;
+}
+#MenuFooterLoginRegistro a{
+    text-decoration: none;
+    font-size: 1.4rem;
+    color: #5f758e;
+    font-weight: 400;
+}
+#MenuFooterLoginRegistro a:hover{
+    color:#46596e;
+    text-decoration:underline;
+}
+#textoCopyright p{
+    display: flex;
+    justify-content: center;
+    font-size: 1rem;
+}
+.fa-heart{
+    color: #DB162F;
+    padding: 0 5px 0 5px;
+}
+
+/* -------------------------------- */
+
+/* REGISTRE.HTML */
+
+#contenedorRegistreGrid{
+    height: 100vh;
+    width:100vw;
+    background-color: #f0f2f5;
+    overflow: hidden;
+    display: grid;
+    grid-template-rows: 4fr 0.5fr;
+    grid-template-areas:
+        "formreg"
+        "footerlogin";
+}
+#contenedorFormularioRegistre{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    grid-area: formreg;
+}
+
+/* -------------------------------- */
+
+/* PERFIL.HTML */
+
+
+/* -------------------------------- */
+
+/* CONFIGURAPERFIL.HTML */
